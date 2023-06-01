@@ -82,12 +82,10 @@ bash ${ROOT}/src/evaluate.sh ${LANGUAGE} ${CKPT_PATH}
 ## Citation
 If you find DUB useful for your research and applications, please cite using the BibTex:
 ```
-@misc{zhang2023dub,
-    title={DUB: Discrete Unit Back-translation for Speech Translation},
-    author={Dong Zhang and Rong Ye and Tom Ko and Mingxuan Wang and Yaqian Zhou},
-    year={2023},
-    eprint={2305.11411},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
+@inproceedings{zhang2023dub,
+	title = {DUB: Discrete Unit Back-translation for Speech Translation},
+	author = {Dong Zhang and Rong Ye and Tom Ko and Mingxuan Wang and Yaqian Zhou},
+	booktitle = {Proc. of ACL},
+	year = {2023},
 }
 ```
