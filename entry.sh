@@ -5,6 +5,7 @@ export task="translate"
 export src_lang="en_units"
 export tgt_lang="de"
 export bt_strategy=""
+export BIMODAL_BART_INIT="False"
 
 #parsing arguments
 while [[ "$#" -gt 0 ]]; do
