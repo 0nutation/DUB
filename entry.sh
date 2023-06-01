@@ -4,7 +4,7 @@ export ROOT="DUB"
 export task="translate"
 export src_lang="en_units"
 export tgt_lang="de"
-export bt_strategy=""
+export bt_strategy=""    #["", "beam5", "topk10", "topk300"]
 
 #parsing arguments
 while [[ "$#" -gt 0 ]]; do
