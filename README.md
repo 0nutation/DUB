@@ -25,7 +25,7 @@ export MUSTC_ROOT="${ROOT}/data-bin/MuSTC"
 
 2. Download the [MuST-C v1.0](https://ict.fbk.eu/must-c/) archive `MUSTC_v1.0_en-de.tar.gz` and uncompress it:
 ```bash
-mkdir -p $MUSTC_ROOT
+mkdir -p ${MUSTC_ROOT}
 cd $MUSTC_ROOT
 tar -xzvf MUSTC_v1.0_en-${LANGUAGE}.tar.gz
 ```
@@ -51,14 +51,14 @@ bash entry.sh --task translate --src_lang ${LANGUAGE} --tgt_lang en_units
 #### Back-translate 
 Generate pseudo pair data using pretrained T2UT model.
 ```bash
-BT_Strategy="topk10"  #["beam5", "topk10", "topk300"]
-bash ${ROOT}/src/back_translate.sh --real_lang ${LANGUAGE} --sys_lang en_units --ckpt_name checkpoint_best.pt --bt_strategy ${BT_Strategy}
+BT_STRATEGY="topk10"  #["beam5", "topk10", "topk300"]
+bash ${ROOT}/src/back_translate.sh --real_lang ${LANGUAGE} --sys_lang en_units --ckpt_name checkpoint_best.pt --bt_strategy ${BT_STRATEGY}
 ```
 
 #### Train U2TT on mix dataset
 Train U2TT on mixture of real and pseudo pair data.
 ```bash
-bash ${ROOT}/src/back_translate.sh --task translate --src_lang en_units --tgt_lang ${LANGUAGE} --bt_strategy topk10
+bash ${ROOT}/src/back_translate.sh --task translate --src_lang en_units --tgt_lang ${LANGUAGE} --bt_strategy ${BT_STRATEGY}
 ```
 
 #### Train bimodal BART
