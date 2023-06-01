@@ -30,7 +30,7 @@ cd $MUSTC_ROOT
 tar -xzvf MUSTC_v1.0_en-${LANGUAGE}.tar.gz
 ```
 
-4.Prepare units and text for training
+3. Prepare units and text for training
 ```bash
 bash ${ROOT}/src/prepare_data.sh ${LANGUAGE}
 ```
