@@ -1,6 +1,7 @@
 # DUB: Discrete Unit Back-translation for Speech Translation
-Code and pretrained models for ACL 2023 Findings paper: [DUB: Discrete Unit Back-translation for Speech Translation](https://export.arxiv.org/abs/2305.11411)  
-Code and pretrained models will soon be available.
+This is a pytorch implementation of [DUB: Discrete Unit Back-translation for Speech Translation](https://export.arxiv.org/abs/2305.11411)(ACL 2023 Findings)
+
+
 
 If you find DUB useful for your research and applications, please cite using the BibTex:
 ```
