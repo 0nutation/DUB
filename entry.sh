@@ -4,7 +4,7 @@ export ROOT="DUB"
 export task="translate"
 export src_lang="en_units"
 export tgt_lang="de"
-export bt_strategy=""    #["", "beam5", "topk10", "topk300"]
+export bt_strategy=""
 
 #parsing arguments
 while [[ "$#" -gt 0 ]]; do
@@ -13,6 +13,7 @@ while [[ "$#" -gt 0 ]]; do
         -src|--src_lang) export src_lang="$2"; shift;;   
         -tgt|--tgt_lang) export tgt_lang="$2"; shift;;   
         -bts|--bt_strategy) export bt_strategy="$2"; shift;;
+        --bimodalBARTinit) export BIMODAL_BART_INIT="$2";shift;;
         *) echo "Unknown parameter passed: $1";;
     esac
     shift
