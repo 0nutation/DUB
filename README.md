@@ -85,7 +85,7 @@ If you find DUB useful for your research and applications, please cite using the
 @inproceedings{zhang2023dub,
 	title = {DUB: Discrete Unit Back-translation for Speech Translation},
 	author = {Dong Zhang and Rong Ye and Tom Ko and Mingxuan Wang and Yaqian Zhou},
-	booktitle = {Proc. of ACL},
+	booktitle = {Findings of ACL},
 	year = {2023},
 }
 ```
