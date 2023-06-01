@@ -22,7 +22,7 @@ export units_size=500
 
 
 export MBART_DIR="${ROOT}/utils/bimodal_bart"
-export BIMODAL_BART_INIT="False"
+# export BIMODAL_BART_INIT="False"
 
 
 if [[ ${BIMODAL_BART_INIT} = "True" ]];then
