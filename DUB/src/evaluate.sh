@@ -28,4 +28,3 @@ python3 fairseq_cli/score.py --sys ${OUTPUT_ROOT}/test.sys --ref ${OUTPUT_ROOT}/
 cat ${OUTPUT_ROOT}/score.log
 
 
-# bash zhangdong/scripts/sacrebleu.sh data-bin/RawDATA/covost2/${lang}/data data-bin/BinaryDATA/${lang}/units-en/ checkpoints/checkpoints_${lang}-units_en_parallel/checkpoint.best_avg.7109-3.pt 8000 units en discreteX2E
