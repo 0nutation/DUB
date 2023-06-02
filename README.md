@@ -2,7 +2,7 @@
 This is a pytorch implementation of [DUB: Discrete Unit Back-translation for Speech Translation](https://export.arxiv.org/abs/2305.11411) (ACL 2023 Findings).
 
 ## Overview
- Discrete Unit Back-translation (DUB) migrates the useful back-translation and pre-training technique from machine translation to speech translation by discretizing the speech signals into unit sequences.  Experimental results show that DUB can further yield an average 5.5 BLEU gain on the MuST-C English-to-German, French, and Spanish translation directions. Experimental results on CoVoST-2 dataset shows that DUB is particularly beneficial for low-resource or unwritten languages in the world.
+Can speech be unsupervisedly discretized? Is it better to represent speech with discrete units than with continuous features in direct ST? How much benefit can useful MT techniques bring to ST? Discrete Unit Back-translation (DUB) migrates the useful back-translation and pre-training technique from machine translation to speech translation by discretizing the speech signals into unit sequences.  Experimental results show that DUB can further yield an average 5.5 BLEU gain on the MuST-C English-to-German, French, and Spanish translation directions. Experimental results on CoVoST-2 dataset shows that DUB is particularly beneficial for low-resource or unwritten languages in the world.
 <div align="center">
   <img src="docs/DUB_main.png" width="100%">
 </div>
