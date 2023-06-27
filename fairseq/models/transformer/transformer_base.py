@@ -81,17 +81,17 @@ class TransformerModelBase(FairseqEncoderDecoderModel):
                     "--share-all-embeddings not compatible with --decoder-embed-path"
                 )
             encoder_embed_tokens = cls.build_embedding(
-                cfg, src_dict, cfg.units_embed_dim, cfg.encoder.embed_dim, cfg.post_proj, cfg.encoder.embed_path
+                cfg, src_dict, cfg.units_embed_dim, cfg.encoder.embed_dim, cfg.post_proj, 
             )
 
             decoder_embed_tokens = encoder_embed_tokens
             cfg.share_decoder_input_output_embed = True
         else:
             encoder_embed_tokens = cls.build_embedding(
-                cfg, src_dict, cfg.units_embed_dim, cfg.encoder.embed_dim, cfg.post_proj, cfg.encoder.embed_path
+                cfg, src_dict, cfg.units_embed_dim, cfg.encoder.embed_dim, cfg.post_proj, 
             )
             decoder_embed_tokens = cls.build_embedding(
-                cfg, tgt_dict, cfg.units_embed_dim, cfg.decoder.embed_dim, cfg.post_proj, cfg.decoder.embed_path
+                cfg, tgt_dict, cfg.units_embed_dim, cfg.decoder.embed_dim, cfg.post_proj, 
             )
         if cfg.offload_activations:
             cfg.checkpoint_activations = True  # offloading implies checkpointing
