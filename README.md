@@ -7,6 +7,16 @@ Can speech be unsupervisedly discretized? Is it better to represent speech with 
   <img src="docs/DUB_main.png" width="100%">
 </div>
 
+## Download Trained Models
+You can download all the models at [🤗huggingface model](https://huggingface.co/nutation/DUB).
+
+| **Language** |                                           **Model**                                            |                                                                                           **SPM & Vocab**                                                                                            |
+|:--------:|:----------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
+| En-De    | •[U2TT](https://huggingface.co/nutation/DUB/resolve/main/en-de/u2tt.pt)<br> •[T2UT](https://huggingface.co/nutation/DUB/resolve/main/en-de/t2ut.pt)<br> •[U2TT_DUB](https://huggingface.co/nutation/DUB/resolve/main/en-de/u2tt_dub.pt)<br> •[Bimodal BART](https://huggingface.co/nutation/DUB/resolve/main/en-de/bimodal_bart.pt) | •[SPM model](https://huggingface.co/nutation/DUB/resolve/main/en-de/spm_units_de.model)<br> •[Vocab](https://huggingface.co/nutation/DUB/resolve/main/en-de/spm_units_de.txt) | 
+| En-Es    | •[U2TT](https://huggingface.co/nutation/DUB/resolve/main/en-es/u2tt.pt)<br> •[T2UT](https://huggingface.co/nutation/DUB/resolve/main/en-es/t2ut.pt)<br> •[U2TT_DUB](https://huggingface.co/nutation/DUB/resolve/main/en-es/u2tt_dub.pt) | •[SPM model](https://huggingface.co/nutation/DUB/resolve/main/en-es/spm_units_es.model)<br> •[Vocab](https://huggingface.co/nutation/DUB/resolve/main/en-es/spm_units_es.txt) | 
+| En-Fr    | •[U2TT](https://huggingface.co/nutation/DUB/resolve/main/en-fr/u2tt.pt)<br> •[T2UT](https://huggingface.co/nutation/DUB/resolve/main/en-fr/t2ut.pt)<br> •[U2TT_DUB](https://huggingface.co/nutation/DUB/resolve/main/en-fr/u2tt_dub.pt) | •[SPM model](https://huggingface.co/nutation/DUB/resolve/main/en-fr/spm_units_fr.model)<br> •[Vocab](https://huggingface.co/nutation/DUB/resolve/main/en-fr/spm_units_fr.txt) | 
+
+
 ## Running DUB on MuST-C En-De
 ### Installation
 ```bash
