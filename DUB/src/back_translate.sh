@@ -61,7 +61,7 @@ cp ${ROOT}/data-bin/RawDATA/translate/en_units-${LANG}/spm* ${RAWDATA_ROOT}
 
 
 #-----------------------------------------------generate----------------------------------------------
-bash ${SCRIPTS_ROOT}/prepare_de_monolingual.sh
+bash ${ROOT}/src/prepare_de_monolingual.sh
 mv ${MONODATA_ROOT}/monolingual.dedup.40000000.de ${RAWDATA_ROOT}/train.${real_lang} 
 # cp ${ROOT}/data-bin/RawDATA/bimodalBART/en_units-de/train.de ${RAWDATA_ROOT}/train.${real_lang} 
 
@@ -86,7 +86,7 @@ echo "dataset is split into ${shards_num} shards"
 
 
 #binary
-for shard in $(seq -f "%2g" 0 ${shards_num});do
+for shard in $(seq -f "%2g" 0 $((shards_num - 1)));do
     fairseq-preprocess \
         --only-source \
         --source-lang ${real_lang} --target-lang ${sys_lang} \
@@ -100,7 +100,7 @@ done
 
 
 #generate
-for shard in $(seq -f "%2g" 0 ${shards_num});do
+for shard in $(seq -f "%2g" 0 $((shards_num - 1)));do
     CUDA_VISIBLE_DEVICES=${shard} fairseq-generate ${MONOBINARYDATA_ROOT}/shard${shard} \
         --path ${ckpt_path} \
         --skip-invalid-size-inputs-valid-test \
